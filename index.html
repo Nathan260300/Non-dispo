@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une chanson pour Alexi, un être trisomique et chelou.">
+    <meta name="author" content="Nathan">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    <title>La chanson d'Alexi</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="passwordPrompt" class="password-prompt">
+        <h2>Veuillez entrer le mot de passe :</h2>
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button id="submitPasswordButton"><strong>Valider</strong></button>
+        <div id="errorMessage" style="display: none;"><strong>Mot de passe incorrect !</strong></div>
+        <div id="attemptsMessage" style="display: none;">
+            <strong>Il vous reste</strong> <span id="attemptsLeft">3</span> <strong>tentatives.</strong>
+        </div>
+        <div id="successMessage" style="display: none;">Mot de passe correct !</div>
+        <div id="waitMessage" style="display: none;"><strong>Veuillez patienter</strong> <span id="timer"><strong>30</strong></span> <strong>secondes avant de réessayer.</strong></div>
+    </div>
+
+    <div id="siteContent" style="display: none;">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#couplet1">Couplet 1</a></li>
+                <li><a href="#refrain1">Refrain</a></li>
+                <li><a href="#couplet2">Couplet 2</a></li>
+                <li><a href="#refrain2">Refrain</a></li>
+                <li><a href="#audio">Écouter la chanson</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <header>
+                <h1>My name is Alexa !</h1>
+                <p>Une chanson pour Alexi, un être trisomique et chelou.</p>
+            </header>
+
+            <section class="lyrics">
+                <h2 id="couplet1">Les paroles</h2>
+                <p><em>Couplet 1:</em></p>
+                <p>Tu t'appelle Alexa, <br>
+                Tu es Grisomique. <br>
+                Même le mec le plus moche du monde est choqué, <br>
+                Alexa, tu es trisomique.</p>
+
+                <p><em id="refrain1">Refrain:</em></p>
+                <p>Alexa, mon cœur te hait, <br>
+                Dans chaque pas, tu es trop bête. <br>
+                Tu es la mélodie du malheur, <br>
+                Alexa, tu es Grisomique.</p>
+
+                <p><em id="couplet2">Couplet 2:</em></p>
+                <p>Alexa, ton sourire me terrifie, <br>
+                Avec toi, je ne me sens toujours gêné. <br>
+                Je te réduit en cendre, <br>
+                Alexa et moi, c'est la séparation.</p>
+
+                <p><em id="refrain2">Refrain:</em></p>
+                <p>Alexa, mon cœur te hait, <br>
+                Dans chaque pas, tu es trop bête. <br>
+                Tu es la mélodie du malheur, <br>
+                Alexa, tu es Grisomique.</p>
+            </section>
+
+            <section class="audio" id="audio">
+                <h2>Écouter la chanson</h2>
+                <audio controls>
+                    <source src="chanson_alexi.mp3" type="audio/mp3">
+                    Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+            </section>
+        </div>
+
+        <footer role="contentinfo">
+            <p><strong>&copy; 2025 - Nathan</strong></p>
+            <hr class="footer-separator">
+            <p>Site internet réalisé par
+                <a href="https://nathan-le-collegien.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Retrouver le code du site sur GitHub."><strong>Nathan</strong></a>.
+            </p>
+            <p>Idée du projet par <strong>les frères BROUMI</strong> (Adam et Elyes).</p>
+            <p>En collaboration avec <strong>Adriano</strong>.</p>
+            <p>Pour <strong>Alexi</strong> (Alexa).</p>
+            <hr class="footer-separator">
+            <p>Retrouver le code du site sur
+                <a href="https://IL-FAUT-CHANGER-LE-LIEN.com" target="_blank" rel="noopener noreferrer" aria-label="Retrouver le code du site sur GitHub."><strong>GitHub</strong></a>.
+            </p>
+            <hr class="footer-separator">
+            <p>-_-</p>
+        </footer>
+    </div>
+
+    <script src="js/défilement.js"></script>
+    <script src="js/mdp.js"></script>
+
+</body>
+</html>
