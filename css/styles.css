@@ -1,4 +1,3 @@
-/* Réinitialisation générale */
 * {
     margin: 0;
     padding: 0;
@@ -80,15 +79,14 @@ audio {
     padding: 10px;
 }
 
-/* Styles du menu de navigation */
 .navigation {
-    background: linear-gradient(135deg, #3498db, #2ecc71); /* Dégradé de bleu vers vert */
+    background: linear-gradient(135deg, #3498db, #2ecc71); 
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 0; /* Fixe le menu en haut de la page */
-    z-index: 1000; /* S'assure que le menu reste au-dessus des autres éléments */
+    top: 0; 
+    z-index: 1000; /
 }
 
 .navigation ul {
@@ -99,7 +97,7 @@ audio {
 
 .navigation ul li {
     display: inline-block;
-    margin-right: 30px; /* Plus d'espace entre les éléments */
+    margin-right: 30px;
 }
 
 .navigation ul li a {
@@ -113,11 +111,9 @@ audio {
 }
 
 .navigation ul li a:hover {
-    color: #f39c12; /* Jaune lumineux sur le survol */
-    transform: scale(1.1); /* Un petit zoom pour l'effet de survol */
-}
+    color: #f39c12; 
+    transform: scale(1.1); }
 
-/* Effet de soulignement personnalisé pour le survol */
 .navigation ul li a::after {
     content: '';
     position: absolute;
@@ -136,14 +132,13 @@ audio {
     transform-origin: bottom left;
 }
 
-/* Ajout d'un petit effet de fond au survol */
 .navigation ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
 footer {
-    background: linear-gradient(135deg, #2980b9, #8e44ad); /* Dégradé de bleu à violet */
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
     color: #fff;
     padding: 30px 20px;
     text-align: center;
@@ -172,106 +167,9 @@ footer strong {
     color: #ecf0f1;
 }
 
-/* Séparation entre les sections du footer */
 footer hr.footer-separator {
     border: none;
     border-top: 2px solid #ecf0f1;
     width: 60%;
     margin: 20px auto;
-}
-
-/* Style pour la fenêtre de mot de passe */
-.password-prompt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #3498db, #2ecc71); /* Dégradé bleu vers vert */
-    color: white;
-    text-align: center;
-}
-
-.password-prompt h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.password-prompt input[type="password"] {
-    padding: 12px;
-    margin: 10px 0;
-    width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    background-color: #fff;
-    color: #333;
-    transition: border-color 0.3s ease;
-}
-
-.password-prompt input[type="password"]:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-.password-prompt button {
-    padding: 12px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    width: 320px;
-    margin-top: 10px;
-}
-
-.password-prompt button:hover {
-    background-color: #45a049;
-}
-
-#errorMessage, #waitMessage, #attemptsMessage, #successMessage {
-    display: none;
-    font-size: 1.2rem;
-}
-
-#errorMessage {
-    color: red;
-    margin-top: 10px;
-}
-
-#waitMessage {
-    color: red;
-    margin-top: 10px;
-}
-
-#attemptsMessage {
-    color: #ffd000;
-    margin-top: 10px;
-}
-
-#attemptsLeft {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #ffd000;
-}
-
-#successMessage {
-    color: green;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-/* Le contenu du site qui est caché avant la validation du mot de passe */
-#siteContent {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-#siteContent.visible {
-    display: block;
-    opacity: 1;
 }
