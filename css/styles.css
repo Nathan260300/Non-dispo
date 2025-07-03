@@ -1,0 +1,46 @@
+/* Fond animé + centrage */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  background: linear-gradient(45deg, #f4f7f6, #ecf0f1, #3498db, #9b59b6);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Animation de fond */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Boîte centrale */
+.indisponible-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+}
+
+.indisponible-box h1 {
+  color: #e74c3c;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.indisponible-box p {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
