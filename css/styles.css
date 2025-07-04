@@ -1,46 +1,91 @@
-/* Fond animé + centrage */
-body {
+/* Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #2c3e50;
+  line-height: 1.6;
   font-size: 1.1rem;
   background: linear-gradient(45deg, #f4f7f6, #ecf0f1, #3498db, #9b59b6);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
+  padding-top: 50px; /* Ajusté selon hauteur menu + offset */
+  min-height: 100vh;
 }
 
-/* Animation de fond */
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Boîte centrale */
-.indisponible-box {
+/* HEADER */
+header {
+  max-width: 900px;
+  margin: 40px auto 20px;
   background-color: #fff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 90%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.indisponible-box h1 {
-  color: #e74c3c;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+header h1 {
+  color: #3498db;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.indisponible-box p {
+header p {
   color: #7f8c8d;
-  font-size: 1.2rem;
-  margin-bottom: 12px;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  background-color: #fff;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Titres des sections */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+.indisponible h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center; /* Aligne les titres au centre */
+}
+
+.i {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.i h3 {
+  color: #2980b9;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
 }
